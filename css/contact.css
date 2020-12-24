@@ -1,0 +1,106 @@
+/* main_banner*/
+#main_banner{
+  width: 100%;
+}
+
+/* #main_banner .map_section{
+  height: 650px;
+} */
+
+#main_banner .content_wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #e8b34e;
+  padding: 50px 0;
+}
+
+/* content 공통스타일*/
+#content1,#content2,#content3{
+  flex: 0 0 33.33%;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+#content1 .t_wrap span, #content2 .t_wrap span, #content3 .t_wrap span{
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin-right: 30px;
+  float: left;
+  background-repeat: no-repeat;
+}
+
+#content1 .t_wrap span{
+  background-image: url('../img/contact/icon_5.png');
+}
+#content2 .t_wrap span{
+  background-image: url('../img/contact/icon_6.png');
+}
+#content3 .t_wrap span{
+  background-image: url('../img/contact/icon_7.png');
+}
+
+.t_wrap{ color: #fff;}
+.t_wrap h3{ display: inline-block;}
+.t_wrap p{
+  display: flex;
+  margin-top: 5px;
+  word-break: break-all;
+}
+/* container */
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  height: 600px;
+  padding: 50px;
+}
+.container .logo_area{
+  width: 400px;
+  height: auto;
+}
+.container .logo_area .img{
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  margin: 10px 0;
+  background-image: url('../img/contact/logo_img.png');
+  background-position: center;
+  background-size: contain;
+}
+.container .logo_area > p{
+  display: inline-block;
+  width: 400px;
+  text-align: center;
+}
+
+/* input 스타일*/
+.container .input_wrap{
+  display: inline-block;
+  width: calc(50% - 2.5px);
+}
+input{
+  display: inline-block;
+  height: 40px;
+  width: 100%;
+  padding-left: 5px;
+  margin: 10px 0;
+  border: 1px solid #eee;
+  border-radius: 5px;
+
+}
+input.s_type{
+  display: inline-block;
+  width: calc( 50% - 2.5px);
+}
+input.l_type{
+  height: 200px;
+}
+
+/* media query area*/
+@media  screen and ( max-width: 1080px) {
+ #content1 .t_wrap span, #content2 .t_wrap span, #content3 .t_wrap span{ display: none;}
+ .container .logo_area{display: none;}
+ .container .input_wrap{ width: calc( 80% - 2.5px)}
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>BEforHOME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/initial.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <!--[if lt IE 9]>
+    <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <input type="checkbox" id="gnbcheck" name="gnbcheck">
+    <label for="gnbcheck" id="gnbbtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div id="main_header">
+      <h1><a href="../index.html">BE<span>for</span>HOME</a></h1>
+      <nav id="gnb">
+        <label for="gnbcheck" id="mobile_close_btn"></label>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../product/product.html">Products</a></li>
+          <li><a href="../detail/product_detail.html">Product details</a></li>
+          <li><a href="../company/company.html">Company</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="../login/login.html">Log in</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="main_banner">
+      <div class="map_section">
+        <div id="map" style="width:100%; height:650px;"></div>
+      </div>
+      <div class="content_wrap">
+        <div id="content1">
+          <div class="t_wrap">
+            <span></span>
+            <h3>Helps always of our lives</h3>
+            <p>If we deliver a small helping hand wherever our resources are needed, we will see this as the greatest reward.</p>
+          </div>
+        </div>
+        <div id="content2">
+          <div class="t_wrap">
+            <span></span>
+            <h3>Various lifestyles</h3>
+            <p>Meet the optimal spatial solution considered.Book now easily and conveniently.</p>
+          </div>
+        </div>
+        <div id="content3">
+          <div class="t_wrap">
+            <span></span>
+            <h3>Voice of the customer</h3>
+            <p>Your precious word. Always listening We will become a BEforHOME Service Center.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="logo_area">
+        <div class="img"></div>
+        <p>We are operating the BEforHOME Service Center website.Easily access convenient and friendly service support online.</p>
+      </div>
+      <div class="input_wrap">
+        <h3>Send us a message</h3>
+        <input type="text" class="s_type" placeholder="Name">
+        <input type="text" class="s_type" placeholder="Phone number">
+        <input type="text" class="m_type" placeholder="E-mail">
+        <input type="text" class="m_type" placeholder="Subject">
+        <input type="text" class="l_type" placeholder="Message">
+        <button class="common_btn"><a href=#>Send a message</a></button>
+      </div>
+    </div>
+    <div id="main_footer">
+      <div class="footer_top">
+        <div class="column">
+          <h4>Our Address</h4>
+          <address>Level 13, 2 Elizabeth St,Melbourne, Victoria 3000,<br>Australia</address>
+          <a href="#"><img src="../img/footer/facebook.png" alt="facebook"></a>
+          <a href="#"><img src="../img/footer/instagram.png" alt="instagram"></a>
+          <a href="#"><img src="../img/footer/twitter.png" alt="twitter"></a>
+        </div>
+        <div class="column list">
+          <ul>
+            <li><a href=#>Home</a></li>
+            <li><a href=#>Product</a></li>
+            <li><a href=#>Product Details</a></li>
+            <li><a href=#>Company</a></li>
+            <li><a href=#>Contact</a></li>
+          </ul>
+        </div>
+        <div class="column list">
+          <ul>
+            <li><a href=#>About</a></li>
+            <li><a href=#>Advertising</a></li>
+            <li><a href=#>Business</a></li>
+            <li><a href=#>Privacy & Terms</a></li>
+          </ul>
+        </div>
+        <div class="column list">
+          <ul>
+            <li><a href=#>Notice</a></li>
+            <li><a href=#>Help</a></li>
+            <li><a href=#>FAQ</a></li>
+            <li><a href=#>Sign in</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <h4>ⓒAll Copyrights reserved.</h4>
+        <p>Made by iwuooh</p>
+      </div>
+    </div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=552ea6265a5d6c0723626e388ac5744c"></script>
+    <script>
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+        mapOption = {
+            center: new kakao.maps.LatLng(37.54699, 127.09598), // 지도의 중심좌표
+            level: 4 // 지도의 확대 레벨
+        };
+
+    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+    var imageSrc = '../img/contact/map_pin.png', // 마커이미지의 주소입니다
+        imageSize = new kakao.maps.Size(64, 69), // 마커이미지의 크기입니다
+        imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+
+    // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+    var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+        markerPosition = new kakao.maps.LatLng(37.54699, 127.09598); // 마커가 표시될 위치입니다
+
+    // 마커를 생성합니다
+    var marker = new kakao.maps.Marker({
+        position: markerPosition,
+        image: markerImage // 마커이미지 설정
+    });
+
+    // 마커가 지도 위에 표시되도록 설정합니다
+    marker.setMap(map);
+    </script>
+  </body>
+</html>

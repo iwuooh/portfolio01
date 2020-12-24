@@ -1,0 +1,168 @@
+body{ height: 100%;}
+/* main_banner */
+#main_banner{
+  width: 100%;
+  height: 800px;
+  background-image: url('../img/company/banner_5.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#main_banner .t_wrap{
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#main_banner .t_wrap h1{
+  font-size: 60px;
+  color: #e8b34e;
+}
+#main_banner .t_wrap p{
+  color: #fff;
+  margin: 20px 0;
+}
+
+/* container */
+.container{
+  width: 100%;
+  height: 700px;
+  margin: 100px auto;
+}
+.container .content_wrap #navi{
+  width: 1500px;
+  height: 700px;
+  overflow: hidden;
+}
+.container .s_wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .s_wrap span{
+  display: inline-block;
+  width: 130px;
+  text-align: center;
+  color: #666;
+  border-bottom: 2px solid #f5f5f5;
+  padding-bottom: 8px;
+  cursor: pointer;
+  transition: border .5s;
+}
+.container .s_wrap span:hover{
+  color: #999;
+  border-bottom: 2px solid #e6ae48;
+}
+.container .s_wrap span.on{
+ border-bottom: 2px solid #e6ae48;
+}
+
+.container .inner_wrap{
+  margin: 50px auto 0;
+  width: 4500px;
+  height: 700px;
+}
+.container .inner_wrap h2{
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+/* article 공통 스타일*/
+.container .inner_wrap .article{
+  width: 1500px;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  float: left;
+  margin: 0 auto;
+  padding-left: 200px;
+  box-sizing: border-box;
+}
+
+.container .inner_wrap .article .text{
+  width: 50%;
+}
+.container .inner_wrap .article .text h3{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+  font-size: 21px;
+  margin: 0 0 5px 30px;
+}
+.container .inner_wrap .article .text h3:before{
+  content:'';
+  position: absolute;
+  left: -30px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  background: url('../img/company/check.png');
+  background-size: contain;
+}
+
+.container .inner_wrap .article .text p{
+  display: inline-block;
+  word-break: break-all;
+}
+.container .inner_wrap .article .text p:nth-of-type(1){
+  margin-bottom: 20px;
+}
+
+.container .inner_wrap .article .item{
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  margin-left: 50px;
+  border-radius: 20px;
+}
+
+.container .inner_wrap .article:nth-child(1) .item{
+  background-image: url('../img/company/article_1.jpg');
+}
+.container .inner_wrap .article:nth-child(2) .item{
+  background-image: url('../img/company/article_2.jpg');
+}
+.container .inner_wrap .article:nth-child(3) .item{
+  background-image: url('../img/company/article_3.jpg');
+}
+
+/* media query */
+@media screen and (max-width: 1500px){
+  .container .content_wrap #navi{ width: 1200px;}
+  .container .inner_wrap{ width: 3600px;}
+  .container .inner_wrap .article{
+    width: 1200px;
+    padding-left: 180px;
+  }
+  .container .inner_wrap .article .text p{ font-size: 14px}
+}
+
+
+@media screen and (max-width: 1200px){
+  .container .content_wrap #navi{ width: 1000px;}
+  .container .inner_wrap{ width: 3000px;}
+  .container .inner_wrap .article{
+    width: 1000px;
+    padding-left: 100px;
+  }
+  .container .inner_wrap .article:nth-child(2) .item,.container .inner_wrap .article:nth-child(3) .item{ background-position: left;}
+  .container .inner_wrap .article .text{ width: 60%;}
+  .container .inner_wrap .article .item{ width: 40%;}
+}
+@media screen and (max-width: 1080px){
+  .container .inner_wrap .article .text{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .container .inner_wrap .article .item{ width: 0;}
+  .container .inner_wrap .article .text p{ font-size: 16px}
+
+}

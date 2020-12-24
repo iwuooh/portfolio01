@@ -1,0 +1,194 @@
+/* section공통스타일 */
+.section{
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+}
+
+/* main banner */
+#main_banner{
+  background-image: url('../img/index/banner.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#main_banner .t_wrap{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+#main_banner .t_wrap h1{
+  font-size: 60px;
+  line-height: 60px;
+  color: #e5ae49;
+}
+#main_banner .t_wrap p{ margin: 20px 0;}
+#main_banner .t_wrap p > span{ color: #fff;}
+
+#main_banner .t_wrap.common_btn{ display: block;}
+
+/* first_section */
+#first_section .content_wrap{
+  width: 100%;
+  margin: 100px auto;
+  text-align: center;
+}
+#first_section .content_wrap h2{
+  display: inline-block;
+  font-size: 50px;
+  color: #e5ae49;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e5ae49;
+}
+#first_section .content_wrap p{
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+#first_section .content_wrap .content{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 80%;
+  margin: 100px auto;
+}
+/* items 공통스타일 */
+#first_section .content_wrap .content .i_wrap{
+  flex: 0 0 calc(25% - 40px);
+  margin: 0 20px;
+}
+#first_section .content_wrap .content .i_wrap .items{
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: .5s;
+}
+#first_section .content_wrap .content .i_wrap #first_item{
+  background-image: url('../img/index/img_1.jpg');
+}
+#first_section .content_wrap .content .i_wrap #second_item{
+  background-image: url('../img/index/img_2.jpg');
+}
+#first_section .content_wrap .content .i_wrap #third_item{
+  background-image: url('../img/index/img_3.jpg');
+}
+#first_section .content_wrap .content .i_wrap #fourth_item{
+  background-image: url('../img/index/img_6.jpg');
+}
+
+#first_section .content_wrap .content .i_wrap p{
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+
+/* second section */
+
+#second_section .content_wrap{
+  height: 100%;
+  background-image: url('../img/index/img_4.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#second_section .content_wrap .content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#second_section .content_wrap .content h2{
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+/* third section */
+
+#third_section .content_wrap{
+  height: 100%;
+}
+#third_section .content_wrap .content{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#third_section .content_wrap .content .i_wrap .item{
+  width: 780px;
+  height: 600px;
+  background: url('../img/index/img_5.jpg') no-repeat;
+  margin-right: 100px;
+}
+
+#third_section .content_wrap .content .t_wrap{
+  display: inline-block;
+  width: 500px;
+}
+#third_section .content_wrap .content .t_wrap h2{ font-size: 40px;}
+#third_section .content_wrap .content .t_wrap p{
+  word-break: break-all;
+  margin: 30px 0;
+}
+#third_section .content_wrap .content .t_wrap button{ margin: 0;}
+
+
+
+/* media query */
+
+@media screen and ( max-width: 1366px){
+  /* first section */
+  #first_section{
+    height: auto;
+  }
+  #first_section .content_wrap .content .i_wrap{
+    flex: 0 0 calc(50% - 60px);
+    margin: 0 30px;
+  }
+  #first_section .content_wrap .content .i_wrap:nth-child(3),  #first_section .content_wrap .content .i_wrap:nth-child(4){
+    margin-top: 30px;
+  }
+
+  #first_section .content_wrap .content .i_wrap .items{
+    height: 400px;
+  }
+  /* third section */
+  #third_section .content_wrap{
+    margin: 0 50px;
+    box-sizing: border-box;
+  }
+  #third_section .content_wrap .content .i_wrap .item{
+    width: 650px;
+    height: 500px;
+    margin-right: 0px;
+    background-size: contain;
+  }
+  #third_section .content_wrap .content .t_wrap h2{ font-size: 30px;}
+  #third_section .content_wrap .content .t_wrap p{ font-size: 16px;}
+}
+@media screen and ( max-width: 1200px){
+  #third_section .content_wrap .content .i_wrap .item{
+    width: 500px;
+    height: 400px;
+}
+@media screen and ( max-width: 970px){
+  #first_section .content_wrap .content .i_wrap{
+    flex: 0 0 calc(100% - 60px);
+    margin: 30px;
+  }
+  #third_section .content_wrap .content .i_wrap .item{
+    width: 300px;
+    height: 550px;
+    background: url('../img/index/img_5_1.png') no-repeat;
+  }
+  #third_section .content_wrap .content .t_wrap h2{ font-size: 26px;}
+  #third_section .content_wrap .content .t_wrap p{ margin: 15px 0;}
+}
