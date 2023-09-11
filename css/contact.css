@@ -45,7 +45,6 @@
 .t_wrap p{
   display: flex;
   margin-top: 5px;
-  word-break: break-all;
 }
 /* container */
 

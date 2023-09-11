@@ -91,7 +91,6 @@
 .row_wrap .row .items p{
   width: 300px;
   margin: 0 auto;
-  word-break: break-all;
 }
 
 .row_wrap .row:nth-child(1) .items:nth-child(1) div{
