@@ -9,7 +9,6 @@ html,body{
   font-family: 'Nunito Sans', sans-serif;
 }
 body{
-  max-width: 1920px;
   min-width: 767px;
 }
 ul,ol,li{ list-style: none;}
