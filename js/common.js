@@ -29,9 +29,9 @@ $(function(){
 
 
   /* product detail script 영역 */
-  $("#table_wrap table tr td span:nth-child(odd)").click(function(){
+  /*$("#table_wrap table tr td span:nth-child(odd)").click(function(){
     alert("해당 상품은 임시품절되었습니다.")
-  });
+  });*/
 
   /* company script 영역 */
   $(".container .s_wrap span").click(function(){

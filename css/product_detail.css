@@ -53,7 +53,6 @@
 }
 .container .content_wrap #table_wrap table tr td span:hover{
   opacity: .8;
-  cursor: pointer;
 }
 .container .content_wrap #table_wrap table tr td span:nth-child(2){
   background: #d7c8b5;
